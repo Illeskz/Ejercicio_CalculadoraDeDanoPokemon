@@ -1,6 +1,6 @@
 # Exercise_Pokemon_Damage_Calculator
 In this exercise you will have to create a function that calculates the battle damage in the attack of one pokemon to another. 
-## description
+## Description
 In the Japanese pokemon game, during a pokemon battle you have two pokemon (assuming single battles) and when one attacks another, then the game uses the following formula to calculate the damage that attack will do to your opponent:
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8c51fed93bb9a80ae8febc13700a40b8a5da402">

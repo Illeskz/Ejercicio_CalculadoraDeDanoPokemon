@@ -1,9 +1,11 @@
-# Ejercicio_CalculadoraDeDañoPokemon
-En este ejercicio tendrás que crear una función que calcule el daño de batalla en el ataque de un pokemon a otro. 
-## descripción
-En el juego japonés de pokemon, durante una batalla pokemon se tienen dos pokemon (asumiendo batallas individuales) y cuando uno ataca a otros, entonces el juego utiliza la siguiente fórmula para calcular el daño que ese ataque le hará a su contrincante:
+# Exercise_Pokemon_Damage_Calculator
+In this exercise you will have to create a function that calculates the battle damage in the attack of one pokemon to another. 
+## description
+In the Japanese pokemon game, during a pokemon battle you have two pokemon (assuming single battles) and when one attacks another, then the game uses the following formula to calculate the damage that attack will do to your opponent:
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8c51fed93bb9a80ae8febc13700a40b8a5da402">
+
+Then create a function that, given two pokemon and the attack to use, makes these calculations and gives you as a result the value of how many points of damage this attack will do to the defending pokemon. At the end of doing all the calculations round up to the previous integer.
 
 where:
 - Level is the level of the attacking pokemon.

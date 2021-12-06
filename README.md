@@ -5,26 +5,26 @@ En el juego japonés de pokemon, durante una batalla pokemon se tienen dos pokem
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8c51fed93bb9a80ae8febc13700a40b8a5da402">
 
-dónde:
-- Level es el nivel del pokemon que ataca
-- Power es el poder del ataque
-- A es el valor de la estadística de ataque del pokemon basado en el tipo de ataque realizado (puede ser ataque físico o especial) que ataca
-- D es el valor de la estadística de defensa del pokemon en el tipo de ataque realizado (puede ser ataque físico o especial) que defiende
-- Target refiere a cuántos pokemon está atacando el pokemon, el valor de esta variable siempre es 1 en batallas individuales y 0.75 en batallas dobles cuando el ataque toca a más de un pokemon.
-- Weather es si el tipo de ataque del pokemon es afectado por el clima del combate, por ejemplo en lluvia los ataques de agua se multiplican por 1.5 y los de fuego por 0.5
-- Badge es 1 en todos los casos.
-- Critical es una variable aleatoria que es 1 el 93.75% de los casos y 1.5 el 6.25% restante
-- Random es una variable aleatoria uniforme que puede tomar cualquier valor entre 0.85 y 1
-- STAB si el ataque es del mismo tipo que el tipo del pokemon que ataca, entonces tiene valor 1.5, si no es 1
-- Type si el tipo del ataque es doblemente súper efectivo ante el tipo del atacante, entonces es 4, si es súper efectivo, entonces 2, si es normalmente efectivo es 1, si es poco efectivo entonces es 0.5, si es doblemente inefectivo, entonces 0.25 y si es nada efectivo 0. Por simplicidad de este ejercicio vamos a suponer que esta variable siempre es 1.
-- Burn es 0.5 si el pokemon está quemado y usa un ataque físico 1 de otro caso
-- Other es 1 en todo caso.
+where:
+- Level is the level of the attacking pokemon.
+- Power is the power of the attack
+- A is the value of the attack statistic of the attacking pokemon based on the type of attack performed (can be physical or special attack)
+- D is the value of the pokemon's defense statistic based on the type of attack performed (it can be physical or special attack)
+- Target refers to how many pokemon the pokemon is attacking, the value of this variable is always 1 in single battles and 0.75 in double battles when the attack touches more than one pokemon.
+- Weather when the type of attack of the pokemon is affected by the weather of the fight, for example in rain the water attacks are multiplied by 1.5 and the fire attacks by 0.5.
+- Badge is 1 in all cases.
+- Critical is a random variable that is 1 in 93.75% of the cases and 1.5 in the remaining 6.25%.
+- Random is a uniform random variable that can take any value between 0.85 and 1.
+- STAB shows if the attack is of the same type as the type of the attacking pokemon, then it has value 1.5, if not it is 1
+- Type means if the type of the attack is doubly super effective against the type of the attacker, then it is 4, if it is super effective, then 2, if it is normally effective it is 1, if it is ineffective then it is 0.5, if it is doubly ineffective, then 0.25 and if it is not effective at all 0. For simplicity of this exercise we will assume that this variable is always 1.
+- Burn is 0.5 if the pokemon is burned and uses a physical attack 1 otherwise 1.
+- Other is 1 in any case
 
-Entonces crea una función que dados dos pokemon y el ataque a utilizar este haga estos cálculos y te de como resultado el valor de cuántos puntos de daño va a realizar este ataque al pokemon defensor. Al final de hacer todos los calculos redondea al entero anterior. 
+Then create a function that, given two pokemon and the attack to use, makes these calculations and gives you as a result the value of how many points of damage this attack will do to the defending pokemon. At the end of doing all the calculations round up to the previous integer. 
 
-Te recomiendo hacer la variable pokemon una estructura de datos la cuál contenga al menos el nombre del pokemon, el nivel, el ataque físico, especial y la defensa física y especial. En este caso asume que los valores que tengan que ver con los tipos valgan 1.
+I recommend making the pokemon variable a data structure which contains at least the pokemon's name, level, physical and special attack, physical and special defense. In this case assume that the values related to the types are worth 1.
 
-Como ejemplo, imagina que tienes un Glaceon de tipo hielo nivel 75 con un estadístico de ataque físico de 123 y usa el ataque de Ice Fang con poder de 65 sobre un Garchomp de tipo Dregon/Tierra con un estadístico de defensa física de 163. ¿Cuál es el resultado de un ataque? ¿Cuál es el valor mínimo y máximo que puede dar este ataque?
+As an example, imagine you have an Ice-type Glaceon level 75 with a physical attack statistic of 123 and it uses the Ice Fang attack with power of 65 on a Dregon/Earth-type Garchomp with a physical defense statistic of 163. What is the result of an attack? What is the minimum and maximum value that this attack can give?
 
 ## BONUS
-Haz los cálculos de tal manera que la variable de pokemon tenga la información de los tipos, y calcule la variable de Type en la fórmula con base en estos, de igual manera haz los cálculos de tal manera de que siempre trunques al entero anterior siempre que realices una multiplicación o una división, en vez de hacerlo al final.
+Do the calculations in such a way that the pokemon variable has the type information, and calculates the Type variable in the formula based on these, likewise do the calculations in such a way that you always truncate to the previous integer whenever you perform a multiplication or a division, instead of doing it at the end.
